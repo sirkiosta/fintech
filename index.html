@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0,maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Savease Frontend</title>
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="icon" href="assets/images/fav_icon.ico" type="image/ico">
+
+    <style>
+        .tab-content {
+            display: none;
+            -webkit-animation: fadeEffect 1s;
+            animation: fadeEffect 1s;
+        }
+        
+        .top-customer h5,
+        .testimonials .section-heading {
+            font-size: 35px;
+            line-height: 40px;
+            margin-bottom: 10px;
+        }
+        
+        @media (max-width: 767px) {
+            .top-customer h5,
+            .testimonials .section-heading {
+                font-size: 25px;
+            }
+        }
+        
+        .top-customer h4 {
+            font-size: 25px;
+            line-height: 40px;
+            margin-bottom: 10px;
+        }
+        
+        .top-customer p {
+            font-size: inherit;
+            line-height: 30px;
+        }
+        
+        .top-customer p a:link,
+        .top-customer p a:hover,
+        .top-customer p a:active {
+            background-color: #131D33 !important;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light p-3">
+        <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-md-auto mr-0 ml-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarServicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Services
+                      </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarServicesDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarAboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            About Us
+                          </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarAboutDropdown">
+                        <a class="dropdown-item" href="about.html">About</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarContactDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Contact Us
+              </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarContactDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="navbar-nav my-2 my-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Support
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="register.html">Create Account</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn my-2 my-sm-0" href="login.html">Login | Register</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <div class="banner-text col-md-5 col-12 mt-md-5">
+            <h4>We are helping millions of people</h4>
+            <p>We have solved the banking hitch of distance, space and structure. <br>You can now make deposit into distinctive bank account without the need to walk into a banking hall.</p>
+            <div class="button-container">
+                <a class="btn orange-button m-1 text-center" href="#">Verify Pin</a>
+                <a class="btn orange-outline m-1" href="#">Make Deposit</a>
+            </div>
+            <div class="button-container-2">
+                <a class="btn m-1 text-center" href="#"><img src="assets/images/google.png" alt=""></a>
+                <a class="btn m-1" href="#"><img src="assets/images/apple.png" alt=""></a>
+            </div>
+        </div>
+    </header>
+
+    <section class="container-fluid about mt-5">
+        <div class="row">
+            <div class="col-md-4 col-12 p-0 tab-container">
+                <div class="col-12 tab-content" id="ourVision">
+                    <h5 class="text-left col-12 section-heading">OUR VISION</h5>
+                    <div class="col-12 text-left tab-content-text">
+                        To create an africa where effective savings practice is effortless and deposit payment is simple.
+                    </div>
+                </div>
+                <div class="col-12 tab-content" id="ourMission">
+                    <h5 class="text-left col-12 section-heading">OUR MISSION</h5>
+                    <div class="col-12 text-left tab-content-text">
+                        To deliver an innovative digital based method for deposits payment and savings. Thus, leading in the , production promotion and marketing of effective savings habit.
+                    </div>
+                </div>
+                <div class="col-12 tab-content" id="ourValues">
+                    <h5 class="text-left col-12 section-heading">OUR VALUES</h5>
+                    <div class="col-12 text-left tab-content-text">
+                        We own an unlimited technological space, therefore we manipulate it to benefit the different class of men. We cast on integrity, effectiveness, simplicity and multiplication. We perform, so you prosper.
+                    </div>
+                </div>
+                <div class="col-12 tab-content" id="ourBrand">
+                    <h5 class="text-left col-12 section-heading">OUR BRAND</h5>
+                    <div class="col-12 text-left tab-content-text">
+                        We deliver simplicity and effectiveness, which is casted on integrity.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 col-12 text-left">
+                <p class="col-12 about-text">
+                    SAVEASE was established to create simple solutions to complex savings problem. It was designed to initiate useful strategies that will promote effective savings culture among Africans.<br><br> It has created the first ever instant
+                    deposit scratch card, offering its users: a simple and convenient way to make deposits into distinctive bank accounts across the continent starting from Nigeria.<br><br> We recognize that good savings habit is vital to capital development
+                    and financial independence; thus, we have designed and provided a simple, yet compelling approach to help every person in the society achieve this fundamental goal.
+                </p>
+                <div class="col-12 span-container p-0">
+                    <span><button class="tab-button" onclick="openTab(event, 'ourVision')">Our Vision</button></span>
+                    <span><button class="tab-button" onclick="openTab(event, 'ourMission')">Our Mission</button></span>
+                    <span><button class="tab-button" onclick="openTab(event, 'ourValues')">Our Values</button></span>
+                    <span><button class="tab-button" onclick="openTab(event, 'ourBrand')">Our Brand</button></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid banner-2 mt-5 p-4">
+        <div class="row mt-4 justify-content-center clearfix">
+            <div class="col-lg-6 col-md-12 col-12 row justify-content-center mb-5">
+                <img src="assets/images/undraw_mobile_ussd_illus.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-lg-6 col-md-12 col-12 mt-2">
+                <h4>
+                    Build custom payments experiences with well-documented APIs
+                </h4>
+                <p>
+                    Developers love our thorough, well-documented APIs that let you to build everything from simple weekend projects, to complex financial products serving hundreds of thousands of customers. If you can imagine it, you can build it with Paystack.
+                </p>
+                <p><img src="assets/images/right-arrow.png" alt="" class="mr-2">Collect one-time and recurring payments from your app or website</p>
+                <p><img src="assets/images/right-arrow.png" alt="" class="mr-2">Make instant transfers</p>
+                <p><img src="assets/images/right-arrow.png" alt="" class="mr-2">Retrieve all your transaction and customer data </p>
+                <p><img src="assets/images/right-arrow.png" alt="" class="mr-2">Verify the identity of customers</p>
+            </div>
+            <div class="col-lg-5 col-md-12 col-12 mt-2 move-y-text">
+                <h4>
+                    Build custom payments experiences with well-documented APIs
+                </h4>
+                <p>
+                    Developers love our thorough, well-documented APIs that let you to build everything from simple weekend projects, to complex financial products serving hundreds of thousands of customers. If you can imagine it, you can build it with Paystack.
+                </p>
+                <p><img src="assets/images/right-arrow.png" alt="" class="mr-2">Collect one-time and recurring payments from your app or website</p>
+                <p><img src="assets/images/right-arrow.png" alt="" class="mr-2">Make instant transfers</p>
+                <p><img src="assets/images/right-arrow.png" alt="" class="mr-2">Retrieve all your transaction and customer data </p>
+                <p><img src="assets/images/right-arrow.png" alt="" class="mr-2">Verify the identity of customers</p>
+            </div>
+            <div class="col-lg-5 col-md-12 col-12 text-center mb-5 move-y-img">
+                <img src="assets/images/undraw_Mobile_application_illus.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-lg-5 col-md-12 col-12 row justify-content-center mb-5">
+                <img src="assets/images/undraw_web_illus.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-lg-6 col-md-12 col-12 mt-2">
+                <h4>
+                    Build custom payments experiences with well-documented APIs
+                </h4>
+                <p>
+                    Developers love our thorough, well-documented APIs that let you to build everything from simple weekend projects, to complex financial products serving hundreds of thousands of customers. If you can imagine it, you can build it with Paystack.
+                </p>
+                <p><img src="assets/images/right-arrow.png" alt="" class="mr-2">Collect one-time and recurring payments from your app or website</p>
+                <p><img src="assets/images/right-arrow.png" alt="" class="mr-2">Make instant transfers</p>
+                <p><img src="assets/images/right-arrow.png" alt="" class="mr-2">Retrieve all your transaction and customer data </p>
+                <p><img src="assets/images/right-arrow.png" alt="" class="mr-2">Verify the identity of customers</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid banner-3 mt-5">
+        <div class="row">
+            <div class="col-12 row multiple-items mx-auto">
+                <div class="col-md-4 col-sm-6 col-12 p-sm-3">
+                    <div class="col">
+                        <img src="assets/images/atm-card.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12 p-sm-3">
+                    <div class="col">
+                        <img src="assets/images/atm-card.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12 p-sm-3">
+                    <div class="col">
+                        <img src="assets/images/atm-card.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12 p-sm-3">
+                    <div class="col">
+                        <img src="assets/images/atm-card.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12 p-sm-3">
+                    <div class="col">
+                        <img src="assets/images/atm-card.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12 p-sm-3">
+                    <div class="col">
+                        <img src="assets/images/atm-card.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12 p-sm-3">
+                    <div class="col">
+                        <img src="assets/images/atm-card.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12 p-sm-3">
+                    <div class="col">
+                        <img src="assets/images/atm-card.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="container-fluid what-we-do">
+        <div class="row">
+            <h5 class="text-center col-12 section-heading">WHAT WE DO</h5>
+            <p class="col-12 text-center">
+                Our suite of services are the building block for you saving with ease
+            </p>
+            <div class="col-12 row multiple-items mx-auto">
+                <div class="col-md-4 col-sm-6 col-12 p-sm-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="assets/images/iconfinder_Finance_saving.png" class="text-center">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Savings & Goals</h5>
+                            <p class="card-text">A contemporary and innovation approach to the production, promotion, and marketing of savings habit. Just Buy, Scratch n’ Click.</p>
+                            <a href="#" class="card-link"><img src="assets/images/right-arrow.png" class="d-inline mr-1">see more...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12 p-sm-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="assets/images/iconfinder_Finance_saving.png" class="text-center">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Savings & Goals</h5>
+                            <p class="card-text">A contemporary and innovation approach to the production, promotion, and marketing of savings habit. Just Buy, Scratch n’ Click.</p>
+                            <a href="#" class="card-link"><img src="assets/images/right-arrow.png" class="d-inline mr-1">see more...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12 p-sm-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="assets/images/iconfinder_Finance_saving.png" class="text-center">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Savings & Goals</h5>
+                            <p class="card-text">A contemporary and innovation approach to the production, promotion, and marketing of savings habit. Just Buy, Scratch n’ Click.</p>
+                            <a href="#" class="card-link"><img src="assets/images/right-arrow.png" class="d-inline mr-1">see more...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+    <section class="container-fluid why-us">
+        <div class="row">
+            <h5 class="text-center col-12 section-heading">WHY CHOOSE US</h5>
+            <div class="col-lg-4 col-md-12 col-12 p-3">
+                <div class="row">
+                    <div class="col-md-4 col-12">
+                        <img src="assets/images/iconfinder_Finance_saving.png" class="text-center img-fluid">
+                    </div>
+                    <div class="col-md-8 col-12">
+                        <h5 class="primary-heading">Strengthening Savings Habit</h5>
+                        <p>
+                            Savings habit among Nigerians is very low. This is because attention and the provision of a structured system to help manage the petty finances of most low income earners is not in place. It is a myth among Nigerians that funds less than N500 should not
+                            be made for lodgment.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-12 p-3">
+                <div class="row">
+                    <div class="col-md-4 col-12">
+                        <img src="assets/images/iconfinder_Finance_saving.png" class="text-center img-fluid">
+                    </div>
+                    <div class="col-md-8 col-12">
+                        <h5 class="primary-heading">Instant Deposit Confirmation</h5>
+                        <p>
+                            Once a transaction is done with the SAVEASE platform, an instant confirmation will be received on the mobile phone used for the transaction, followed by a credit alert from the crediting bank to the recipient telephone. This super-fast experience makes
+                            banking impressive and excellent.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-12 p-3">
+                <div class="row">
+                    <div class="col-md-4 col-12">
+                        <img src="assets/images/iconfinder_Finance_saving.png" class="text-center img-fluid">
+                    </div>
+                    <div class="col-md-8 col-12">
+                        <h5 class="primary-heading">Destroy Impulsive Expenditure</h5>
+                        <p>
+                            Most expenditures are done on impulses. This breakthrough in banking will reduce such unplanned expenditures. It will encourage the proper budgeting technique needed to develop good financial habits, as there will no longer be idle physical cash.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid testimonials pt-4 pb-2 pl-1 pr-1 pl-lg-3 pr-lg-3">
+        <div class="row justify-content-center">
+            <h5 class="text-center col-12 section-heading">Saver of the Week!</h5>
+            <div class="col-md-4 col-10 img">
+            </div>
+            <div class="col-md-4 col-12 m-4">
+                <h4>
+                    Meet Francis
+                </h4>
+                <p>
+                    Consistently, we sparkle a focus on one saver, asking them inquiries about their reserve funds culture and how the item is explicitly helping them shape how they spend and put something aside for future duties.
+                </p>
+                <p><a href="" class="btn card-button">Meet Francis</a></p>
+            </div>
+        </div>
+        <div class="row mt-5 mb-3">
+            <h5 class="text-center col-12 section-heading">Customer Testimonials</h5>
+            <div class="col-12 row multiple-items mx-auto">
+                <div class="col-lg-4 col-md-6 col-12 p-md-3 p-0">
+                    <div class="card text-left">
+                        <div class="card-body">
+                            <p class="card-text">
+                                Savease has really imparted so much on my family teaching my kids how to save their snack money into thier savease account .
+                            </p>
+                        </div>
+                        <div class="row p-3">
+                            <div class="card-body col-6 mr-2">
+                                <h6 class="card-title">Mary Okoye</h6>
+                                <p class="card-text m-0">
+                                    School Teacher
+                                </p>
+                            </div>
+                            <a href="#" class="card-link col-4"><img src="assets/images/avatar-icon.jpg" class="img-fluid"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 p-md-3 p-0">
+                    <div class="card text-left">
+                        <div class="card-body">
+                            <p class="card-text">
+                                Savease has really imparted so much on my family teaching my kids how to save their snack money into thier savease account .
+                            </p>
+                        </div>
+                        <div class="row p-3">
+                            <div class="card-body col-6 mr-2">
+                                <h6 class="card-title">Mary Okoye</h6>
+                                <p class="card-text m-0">
+                                    School Teacher
+                                </p>
+                            </div>
+                            <a href="#" class="card-link col-4"><img src="assets/images/avatar-icon.jpg" class="img-fluid"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 p-md-3 p-0">
+                    <div class="card text-left">
+                        <div class="card-body">
+                            <p class="card-text">
+                                Savease has really imparted so much on my family teaching my kids how to save their snack money into thier savease account .
+                            </p>
+                        </div>
+                        <div class="row p-3">
+                            <div class="card-body col-6 mr-2">
+                                <h6 class="card-title">Mary Okoye</h6>
+                                <p class="card-text m-0">
+                                    School Teacher
+                                </p>
+                            </div>
+                            <a href="#" class="card-link col-4"><img src="assets/images/avatar-icon.jpg" class="img-fluid"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container-fluid partners">
+        <div class="row mx-auto">
+            <h5 class="col-12 section-heading">Powering growth for amazing businesses</h5>
+            <p class="col-12">You can transfer to any of these banks</p>
+            <div class="col-6 col-md-2 d-flex">
+                <img src="assets/images/Access-Bank-PLC-Logo.png" alt="" width="80" height="100" class="img-fluid my-auto">
+            </div>
+            <div class="col-6 col-md-2 d-flex">
+                <img src="assets/images/Ecobank-Logo.png" alt="" width="80" height="100" class="img-fluid my-auto">
+            </div>
+            <div class="col-6 col-md-2 d-flex">
+                <img src="assets/images/First-Bank-Nigeria-Logo.png" alt="" width="80" height="100" class="img-fluid my-auto">
+            </div>
+            <div class="col-6 col-md-2 d-flex">
+                <img src="assets/images/First-City-Monument-Bank-Ltd-Logo.png" alt="" width="80" height="100" class="img-fluid my-auto">
+            </div>
+            <div class="col-6 col-md-2 d-flex">
+                <img src="assets/images/Guaranty-Trust-Bank-Logo.png" alt="" width="80" height="100" class="img-fluid my-auto">
+            </div>
+            <div class="col-6 col-md-2 d-flex">
+                <img src="assets/images/Standard-Chartered-Logo.png" alt="" width="80" height="100" class="img-fluid my-auto">
+            </div>
+            <div class="col-6 col-md-2 d-flex">
+                <img src="assets/images/Sterling-Bank-Plc-Logo.png" alt="" width="80" height="100" class="img-fluid my-auto">
+            </div>
+            <div class="col-6 col-md-2 d-flex">
+                <img src="assets/images/United-Bank-for-Africa-Logo.png" alt="" width="80" height="100" class="img-fluid my-auto">
+            </div>
+            <div class="col-6 col-md-2 d-flex">
+                <img src="assets/images/Wema-Bank-Logo.png" alt="" width="80" height="100" class="img-fluid my-auto">
+            </div>
+            <div class="col-6 col-md-2 d-flex">
+                <img src="assets/images/Zenith-Bank-Logo.png" alt="" width="80" height="100" class="img-fluid my-auto">
+            </div>
+            <div class="col-6 col-md-2 d-flex">
+                <img src="assets/images/Polaris-Bank-Logo.png" alt="" class="img-fluid my-auto">
+            </div>
+            <div class="col-6 col-md-2 d-flex">
+                <img src="assets/images/Quickteller-Logo.png" alt="" class="img-fluid my-auto">
+            </div>
+            <div class="col-6 col-md-2 d-flex">
+                <img src="assets/images/Paystack-Logo.png" alt="" width="50" height="100" class="my-auto">
+            </div>
+            <div class="col-6 col-md-2 d-flex">
+                <img src="assets/images/Heritage-Bank-PLC-Logo.png" alt="" class="img-fluid my-auto">
+            </div>
+            <div class="col-6 col-md-2 d-flex">
+                <img src="assets/images/Stanbic-IBTC-Bank-Logo.png" alt="" class="img-fluid my-auto">
+            </div>
+            <div class="col-6 col-md-2 d-flex">
+                <img src="assets/images/Union-Bank-Nigeria-Logo.png" alt="" class="img-fluid my-auto">
+            </div>
+            <div class="col-6 col-md-2 d-flex">
+                <img src="assets/images/Flutterwave-Logo.png" alt="" class="img-fluid my-auto">
+            </div>
+            <div class="col-6 col-md-2 d-flex">
+                <img src="assets/images/Stanbic-IBTC-Bank-Logo.png" alt="" class="img-fluid my-auto">
+            </div>
+        </div>
+    </section>
+
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-12 row pt-4 pb-4">
+                <div class="col-12 col-md-4 col-lg-3 logo d-flex mb-md-0 mb-5">
+                    <img src="assets/images/logo.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-12 col-md-4 col-lg-2">
+                    <h5 class="col-12 section-heading">Discover Savease</h5>
+                    <ul class="col-12">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Privacy and Terms</a></li>
+                        <li><a href="#">Working With Us</a></li>
+                        <li><a href="#">Our Solutions</a></li>
+                        <li><a href="#">Savease Social Media</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 col-lg-2">
+                    <h5 class="col-12 section-heading">Get in Touch</h5>
+                    <ul class="col-12">
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Technical Support</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="tel:+2349090692222">Call Us Now 0700SAVEASE</a></li>
+                        <li><a href="mailto:Info@savease.ng">Send Us an email Info@savease.ng</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 col-lg-2">
+                    <h5 class="col-12 section-heading">Information For</h5>
+                    <ul class="col-12">
+                        <li><a href="#">Vendor / Savease Agent</a></li>
+                        <li><a href="#">Join Our Team</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 col-lg-2">
+                    <h5 class="col-12 section-heading">Location</h5>
+                    <ul class="col-12">
+                        <p>
+                            1C, Evo Crescent, GRA II, Portharcourt, Rivers State, Nigeria.
+                        </p>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-div col-12 pt-3 pb-3">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-12 col-sm-6 col-md-8 mb-2 mb-md-0">
+                Copyrights © 2019 All Rights Reserved. Powered by Savease Nigeria LLC, a sub-class of Savease Africa.
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 text-center">
+                <div class="row align-items-center">
+                    <ul class="col-12 m-0">
+                        <li class="mt-1">
+                            <a href="">
+                                <img src="assets/images/linkedin.png" alt="" width="27" height="27">
+                            </a>
+                        </li>
+                        <li class="mt-1">
+                            <a href="">
+                                <img src="assets/images/instagram.png" alt="" width="27" height="27">
+                            </a>
+                        </li>
+                        <li class="mt-1">
+                            <a href="">
+                                <img src="assets/images/twitter.png" alt="" width="27" height="27">
+                            </a>
+                        </li>
+                        <li class="mt-1">
+                            <a href="">
+                                <img src="assets/images/facebook.png" alt="" width="27" height="27">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button id="scrollButton" class="scroll-button" onclick="topFunction()">
+        <img src="assets/images/up-arrow.png" alt="" width="17" height="17">
+    </button>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        function openTab(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tab-button");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        {
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onload = window.onscroll = function() {
+                scrollFunction()
+            };
+
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 4000 || document.documentElement.scrollTop > 4000) {
+                    document.getElementById("scrollButton").style.display = "block";
+                } else {
+                    document.getElementById("scrollButton").style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.body.style.scrollBehaviour = 'smooth';
+                document.documentElement.style.scrollBehavior = 'smooth';
+                document.documentElement.scrollTop = 0;
+            }
+        }
+    </script>
+</body>
+
+</html>

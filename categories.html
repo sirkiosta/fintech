@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0,maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Savease Frontend</title>
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="icon" href="assets/images/fav_icon.ico" type="image/ico">
+
+    <style>
+        body {
+            background: linear-gradient(175.98deg, rgba(19, 29, 51, 0.54) -173.17%, rgba(19, 29, 51, 0.08) 25.78%, rgba(101, 140, 226, 0.1) 63.23%, rgba(19, 29, 51, 0.01) 94.68%, rgba(19, 29, 51, 0) 109.72%);
+        }
+        
+        .categories {
+            margin-top: 100px;
+        }
+        
+        .categories-content {
+            background-color: #fff;
+        }
+        
+        .nav-tabs .nav-item .nav-link,
+        .nav-tabs .nav-item .nav-link:focus,
+        .nav-tabs .nav-item .nav-link:hover {
+            background-color: transparent;
+            border: none;
+            color: #131D33;
+        }
+        
+        .nav-tabs .nav-item .nav-link.active {
+            font-weight: bolder;
+        }
+        
+        @media (max-width: 768px) {
+            header .banner-text {
+                position: absolute;
+                top: 35%;
+                left: 3%;
+                transform: translateY(-20%);
+            }
+        }
+        
+        @media (max-width: 368px) {
+            .bench-mark {
+                margin-top: 8.5em !important;
+            }
+        }
+        
+        section .section-heading {
+            font-size: 160%;
+        }
+        
+        .top-customer h5,
+        .testimonials .section-heading {
+            font-size: 35px;
+            line-height: 40px;
+            margin-bottom: 10px;
+        }
+        
+        @media (max-width: 767px) {
+            .top-customer h5,
+            .testimonials .section-heading {
+                font-size: 25px;
+            }
+        }
+        
+        .top-customer h4 {
+            font-size: 25px;
+            line-height: 40px;
+            margin-bottom: 10px;
+        }
+        
+        .top-customer p {
+            font-size: inherit;
+            line-height: 30px;
+        }
+        
+        .top-customer p a:link,
+        .top-customer p a:hover,
+        .top-customer p a:active {
+            background-color: #131D33 !important;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light p-3">
+        <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-md-auto mr-0 ml-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Help and Support</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav my-2 my-lg-0">
+                <li class="nav-item">
+                    <a class="btn my-2 my-sm-0" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <section class="container-fluid categories mb-5">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-3 p-3 mr-md-5">
+                <form action="" class="support-form col-12 p-0 mb-4">
+                    <div class="row justify-content-center align-items-center">
+                        <button type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none"><style>.a{fill:#546E7A;}</style><path d="M15.1 9.3C14.9 9.3 14.6 9.5 14.6 9.8 14.6 10 14.9 10.3 15.1 10.3 15.4 10.3 15.6 10 15.6 9.8 15.6 9.5 15.4 9.3 15.1 9.3Z" class="a"/><path d="M24.4 21.7L17.9 15.1C19 13.5 19.5 11.7 19.5 9.8 19.5 4.4 15.2 0 9.8 0 4.4 0 0 4.4 0 9.8 0 15.2 4.4 19.5 9.8 19.5 11.7 19.5 13.5 19 15.1 17.9L16.9 19.7C17 19.7 17 19.7 17 19.7L21.7 24.4C22 24.8 22.5 25 23 25 23.6 25 24.1 24.8 24.4 24.4 24.8 24.1 25 23.6 25 23 25 22.5 24.8 22 24.4 21.7ZM14.9 16.9C14.9 16.9 14.9 16.9 14.9 16.9 13.4 18 11.6 18.6 9.8 18.6 4.9 18.6 1 14.6 1 9.8 1 4.9 4.9 1 9.8 1 14.6 1 18.6 4.9 18.6 9.8 18.6 11.6 18 13.4 16.9 14.9 16.3 15.7 15.7 16.3 14.9 16.9ZM15.9 17.3C16.4 16.9 16.9 16.4 17.3 15.9L18.7 17.3C18.3 17.8 17.8 18.3 17.3 18.7L15.9 17.3ZM23.7 23.7C23.6 23.9 23.3 24 23 24 22.8 24 22.5 23.9 22.4 23.7L18 19.4C18.5 19 19 18.5 19.4 18L23.7 22.4C23.9 22.5 24 22.8 24 23 24 23.3 23.9 23.6 23.7 23.7Z" class="a"/><path d="M9.8 2C5.5 2 2 5.5 2 9.8 2 14.1 5.5 17.6 9.8 17.6 14.1 17.6 17.6 14.1 17.6 9.8 17.6 5.5 14.1 2 9.8 2ZM9.8 16.6C6 16.6 2.9 13.5 2.9 9.8 2.9 6 6 2.9 9.8 2.9 13.5 2.9 16.6 6 16.6 9.8 16.6 13.5 13.5 16.6 9.8 16.6Z" class="a"/><path d="M15.2 7.7C14.8 6.6 14.1 5.6 13.1 5 12.1 4.3 11 3.9 9.8 3.9 9.5 3.9 9.3 4.1 9.3 4.4 9.3 4.7 9.5 4.9 9.8 4.9 11.8 4.9 13.6 6.1 14.3 8 14.4 8.2 14.6 8.3 14.8 8.3 14.8 8.3 14.9 8.3 15 8.3 15.2 8.2 15.3 7.9 15.2 7.7Z" class="a"/></svg>
+                        </button>
+                        <input type="search" placeholder="Search" name="search" class="pl-2 pb-2 pr-5">
+                    </div>
+                </form>
+                <h5 class="section-heading mb-4">Categories</h5>
+                <ul class="nav flex-column nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="general-tab" data-toggle="tab" href="#general" role="tab" aria-controls="general" aria-selected="true">General</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="gettingStarted-tab" data-toggle="tab" href="#gettingStarted" role="tab" aria-controls="gettingStarted" aria-selected="false">Getting Started</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="myAccount-tab" data-toggle="tab" href="#myAccount" role="tab" aria-controls="myAccount" aria-selected="false">My Account</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="myDashboard-tab" data-toggle="tab" href="#myDashboard" role="tab" aria-controls="myDashboard" aria-selected="false">My Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="payment-tab" data-toggle="tab" href="#payment" role="tab" aria-controls="payment" aria-selected="false">Payment Channels</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pricing-tab" data-toggle="tab" href="#pricing" role="tab" aria-controls="pricing" aria-selected="false">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="billSub-tab" data-toggle="tab" href="#billSub" role="tab" aria-controls="billSub" aria-selected="false">Billing and Subscription</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="settle-tab" data-toggle="tab" href="#settle" role="tab" aria-controls="settle" aria-selected="false">Settlements and Disputes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="transfer-tab" data-toggle="tab" href="#transfer" role="tab" aria-controls="transfer" aria-selected="false">Transfer</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-12 col-lg-7 text-center p-3 categories-content">
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active text-left" id="general" role="tabpanel" aria-labelledby="general-tab">
+                        <h5 class="section-heading mb-4">General</h5>
+                        <p class="col-12">General information about Savease and how you can use it.</p>
+                        <nav class="nav flex-column">
+                            <a class="nav-link" href="#">Common Transaction Errors </a>
+                            <a class="nav-link" href="#">Managing bank accounts</a>
+                            <a class="nav-link" href="#">Transaction Limits on Rave</a>
+                            <a class="nav-link" href="#">What are the requirements for using Rave?</a>
+                            <a class="nav-link" href="#">Add Business Documents </a>
+                            <a class="nav-link" href="#">Rave live and test environments </a>
+                            <a class="nav-link" href="#">How much does it cost to create a Rave account?</a>
+                            <a class="nav-link" href="#">Add users to your business</a>
+                        </nav>
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="footer-div col-12 pt-3 pb-3">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-12 col-sm-6 col-md-8 mb-2 mb-md-0">
+                Copyrights © 2019 All Rights Reserved. Powered by Savease Nigeria LLC, a sub-class of Savease Africa.
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 text-center">
+                <div class="row align-items-center">
+                    <ul class="col-12 m-0">
+                        <li class="mt-1">
+                            <a href="">
+                                <img src="assets/images/linkedin.png" alt="" width="27" height="27">
+                            </a>
+                        </li>
+                        <li class="mt-1">
+                            <a href="">
+                                <img src="assets/images/instagram.png" alt="" width="27" height="27">
+                            </a>
+                        </li>
+                        <li class="mt-1">
+                            <a href="">
+                                <img src="assets/images/twitter.png" alt="" width="27" height="27">
+                            </a>
+                        </li>
+                        <li class="mt-1">
+                            <a href="">
+                                <img src="assets/images/facebook.png" alt="" width="27" height="27">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button id="scrollButton" class="scroll-button" onclick="topFunction()">
+        <img src="assets/images/up-arrow.png" alt="" width="17" height="17">
+    </button>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        // function openTab(evt, cityName) {
+        //     var i, tabcontent, tablinks;
+        //     tabcontent = document.getElementsByClassName("tab-content");
+        //     for (i = 0; i < tabcontent.length; i++) {
+        //         tabcontent[i].style.display = "none";
+        //     }
+        //     tablinks = document.getElementsByClassName("tab-button");
+        //     for (i = 0; i < tablinks.length; i++) {
+        //         tablinks[i].className = tablinks[i].className.replace(" active", "");
+        //     }
+        //     document.getElementById(cityName).style.display = "block";
+        //     evt.currentTarget.className += " active";
+        // }
+
+        {
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onload = window.onscroll = function() {
+                scrollFunction()
+            };
+
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+                    document.getElementById("scrollButton").style.display = "block";
+                } else {
+                    document.getElementById("scrollButton").style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.body.style.scrollBehaviour = 'smooth';
+                document.documentElement.style.scrollBehavior = 'smooth';
+                document.documentElement.scrollTop = 0;
+            }
+        }
+    </script>
+</body>
+
+</html>
